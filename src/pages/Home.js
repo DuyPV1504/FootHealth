@@ -1,12 +1,15 @@
 import React from "react";
-import "./Home.css";
-import footIcon from "../assets/icon.png";
+import footIcon from "../assets/icon.png";  
+import "./Home.css";  
 
 const Home = () => {
   return (
-    <section className="hero">
+    <section id="home" className="section hero">
       <div className="hero-content">
-        <h1>STEP AHEAD WITH CONFIDENCE,<br />PROTECT YOUR FEET DAILY!</h1>
+        <h1>
+          STEP AHEAD WITH CONFIDENCE,<br />
+          PROTECT YOUR FEET DAILY!
+        </h1>
         <p>
           Welcome to DiabEase – your trusted partner in protecting diabetic foot health. 
           With tools to detect early signs of diabetic foot ulcers (DFU) and personalized 
