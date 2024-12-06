@@ -1,10 +1,9 @@
-/* Đảm bảo bố cục sử dụng flexbox */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 100px 20px;
-    background: linear-gradient(to right, #3A8DD3, #77C7E5); 
+    background: linear-gradient(to right, #1E71A4, #65FDF0); 
     color: white;
   }
   
@@ -24,9 +23,9 @@
   }
   
   .get-started {
-    background-color: #007BFF;
+    background-color: #71DEFF;
     border: none;
-    color: white;
+    color: #FFFFFF;
     padding: 12px 30px;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -38,14 +37,13 @@
     background-color: #0056b3;
   }
   
-  /* Phần hình ảnh bàn chân */
   .hero-image {
     flex: 1;
     text-align: center;
   }
   
   .hero-image img {
-    max-width: 250px;  /* Điều chỉnh kích thước hình ảnh */
+    max-width: 250px; 
     height: auto;
   }
   
