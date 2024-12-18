@@ -35,18 +35,27 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact-info">
-        <div className="logo">
-          <img src={logoImage} alt="DiabEase Logo" />
-        </div>
-        <div className="info">
-          <h3>Contact</h3>
-          <p>DiabEase@gmail.com</p>
-          <p>+33-0756429821</p>
-          <p>Weekdays: 08h00–20h00</p>
-          <p>Saturday: 08h00–14h00</p>
-          <p>Sunday: 09h00–13h00</p>
-        </div>
-      </div>
+  <div className="contact-info-container">
+    <div className="logo">
+      <img src={logoImage} alt="DiabEase Logo" />
+    </div>
+    <div className="info">
+      <h3>Contact</h3>
+      <p>DiabEase@gmail.com</p>
+      <p>+33-0756429821</p>
+    </div>
+  </div>
+  <div className="divider"></div>
+  <div className="working-hours">
+    <p>Weekdays : 08h00–20h00</p>
+    <p><span>*</span> Saturday : 08h00–14h00 <span>*</span></p>
+    <p>Sunday : 09h00–13h00</p>
+  </div>
+  <div className="website">
+    <a href="http://www.DiabEase.com">www.DiabEase.com</a>
+  </div>
+</div>
+
     </section>
   );
 };

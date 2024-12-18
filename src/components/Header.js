@@ -1,10 +1,14 @@
 import React from "react";
 import "./Header.css";
-
+import logo from "../assets/logo.png"; 
 const Header = () => {
   return (
     <header className="header">
-      <nav>
+      <nav className="navbar">
+        {/* Logo */}
+        <img src={logo} alt="Logo" className="logo" />
+
+        {/* Navigation Links */}
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about-us">About Us</a></li>
@@ -19,3 +23,4 @@ const Header = () => {
 };
 
 export default Header;
+
