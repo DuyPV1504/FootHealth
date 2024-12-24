@@ -24,12 +24,13 @@ const Predict = () => {
 
     try {
       const response = await axios.post(
-        "https://5df9-35-233-144-138.ngrok-free.app",
+        "https://282e-34-106-125-19.ngrok-free.app",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
         }
       );
+      console.log("Response data from backend:", response.data);
       setPrediction(response.data);
     } catch (err) {
       console.error(err);
@@ -45,8 +46,11 @@ const Predict = () => {
     setError(false);
   };
 
-  const result = prediction
-    ? diabeticFootUlcers.find((item) => item.id === Number(prediction?.label))
+  // Map label from backend to match the `id` in `sick.js`
+  const mappedLabel = prediction?.label ? parseInt(prediction.label, 10) + 1 : null;
+
+  const result = mappedLabel
+    ? diabeticFootUlcers.find((item) => item.id === mappedLabel)
     : null;
 
   useEffect(() => {
